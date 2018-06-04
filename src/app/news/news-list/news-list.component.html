@@ -1,0 +1,9 @@
+<div class="container pt-3">
+  <h3>Liste des news</h3>
+  <p>Liste de toutes les news du site</p>
+  <div class="row">
+    <div class="col-4" *ngFor="let new of news.reverse(); let i = index">
+      <app-news-preview id="{{ new.id }}" title="{{ new.title }}" text="{{new.text}}" img="{{ new.img }}"></app-news-preview>
+    </div>
+  </div>
+</div>
